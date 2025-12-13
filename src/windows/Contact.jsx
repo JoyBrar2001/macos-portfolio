@@ -22,6 +22,7 @@ const Contact = () => {
 
         <h3>Let&apos;s Connect</h3>
         <p>Got and idea? A bug to squash? Or just wanna talk tech?</p>
+        <p>contact@jsmastery.pro</p>
 
         <ul>
           {socials.map(({ id, bg, link, icon, text }) => (
