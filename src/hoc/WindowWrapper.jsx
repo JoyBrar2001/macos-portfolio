@@ -8,7 +8,11 @@ import useWindowStore from "#store/window";
 const WindowWrapper = (Component, windowKey) => {
   const Wrapped = (props) => {
     const { focusWindow, windows } = useWindowStore();
-    const { isOpen, zIndex } = windows[windowKey];
+    const windowState = windows[windowKey];
+    
+    if(!windowState) return null;
+    
+    const { isOpen, zIndex } = windowState;
     const ref = useRef(null);
 
     useGSAP(() => {

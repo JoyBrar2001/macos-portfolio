@@ -66,6 +66,7 @@ const Finder = () => {
 
           {renderList("Work ", locations.work.children)}
         </div>
+        
         <ul className="content">
           {activeLocation?.children.map((item) => (
             <li
@@ -78,7 +79,6 @@ const Finder = () => {
             </li>
           ))}
         </ul>
-
       </div>
     </>
   );
